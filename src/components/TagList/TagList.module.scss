@@ -1,0 +1,12 @@
+
+.Tag_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.Tag_list__option {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}

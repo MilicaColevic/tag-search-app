@@ -1,0 +1,28 @@
+.Content {
+  display: flex;
+  align-items: center;
+  &_icon {
+    margin-right: 1rem;
+  }
+  &_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    &_search{
+        display: flex;
+        align-items: center;
+        &_query{
+            font-weight: bold; 
+            color: #ffb300; 
+        }
+        &_tag{
+            color: #333;
+        }
+    }
+    &_subtext{
+        font-size: 12px;
+        color: #999;
+    }
+  }
+}

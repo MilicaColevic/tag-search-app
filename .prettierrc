@@ -1,0 +1,22 @@
+{
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "singleQuote": true,
+  "printWidth": 150,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@assets/(.*)$",
+    "^@lerry/(.*)$",
+    "^@uikit/(.*)$",
+    "^@state/(.*)$",
+    "^@store/(.*)$",
+    "^@api/(.*)$",
+    "^@components/(.*)$",
+    "^@interfaces/(.*)$",
+    "^@utils/(.*)$",
+    "^@src/(.*)$",
+    "^@styles/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSortSpecifiers": true
+}

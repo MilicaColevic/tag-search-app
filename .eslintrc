@@ -1,0 +1,86 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:json/recommended",
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "json", "jest-dom", "testing-library", "jsx-a11y", "prettier"],
+  "ignorePatterns": ["test-report", "public", "infrastructure", "swagger"],
+  "rules": {
+    "prettier/prettier": "error",
+    "max-len": [2, { "code": 150 }],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/no-unknown-property": "warn",
+    "react/prefer-stateless-function": [1],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/button-has-type": 0,
+    "import/extensions": [0],
+    "no-use-before-define": "off",
+    "react/require-default-props": [0],
+    "object-curly-newline": [0],
+    "implicit-arrow-linebreak": [0],
+    "react/jsx-curly-newline": [0],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "no-unused-vars": "off",
+    "no-shadow": "off",
+    "function-paren-newline": [0],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-shadow": ["error"],
+    "curly": ["error", "all"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "eslint-import-resolver-custom-alias": {
+        "alias": {
+          "@uikit": "./src/uikit",
+          "@assets": "./src/assets",
+          "@lerry": "./src/lerry",
+          "@components": "./src/components",
+          "@interfaces": "./src/interfaces",
+          "@state": "./src/stateManagement",
+          "@api": "./src/api",
+          "@store": "./src/store",
+          "@src": "./src",
+          "@styles": "./src/styles",
+          "@utils": "./src/utils"
+        },
+        "extensions": [".tsx", ".ts"]
+      }
+    }
+  },
+  "globals": {
+    "JSX": true,
+    "React": true
+  }
+}

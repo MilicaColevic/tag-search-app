@@ -1,0 +1,11 @@
+# Ignore artifacts:
+build
+coverage
+test-report
+generators
+node_modules
+*-lock.json 
+yarn.lock
+public
+*scss.d.ts
+CHANGELOG.md
